@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CatphotoApp</title>
   </head>
   <body>
     <main><!--Este comando es fundamental para ayudar a los motores de busqueda-->
@@ -27,8 +27,47 @@
           <li>Laser pointer</li>
           <li>Lasagna</li>
         </ul>
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."> <!--alt es un atributo que nos muestra el texto por si no se carga la imagen-->
-    </section>
+        <figure> <!--El elemento figura representa un contenido autónomo y le permitirá asociar una imagen a un pie de foto.-->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."> <!--alt es un atributo que nos muestra el texto por si no se carga la imagen-->
+        <figcaption>Cats <em>love</em> lasagna</figcaption> <!--Con este comando se agrega un titulo abajo de la foto-->
+        </figure><!--con la etiqueta <em> hacemos negrita-->
+        <h3>Top 3 things cats hate:</h3>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!-- con la etiqueta <strong> agregamos negrita remarcada-->
+        </figure>
+          </ol>
+        </section>
+        <section>
+          <h2>Cat Form</h2>
+          <form action="https://freecatphotoapp.com/submit-cat-photo"></form> <!--ETIQUETA FORMULARIO--> <!--- el atributo action sirve como link para enviar los datos-->
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label> <input type="radio" id="Indoor" name="Indoor-Outdoor" value="indoor" checked> indoor </label> <!-- Esta etiqueta se utilizan para ayudar a asociar el texto de un elemento de entrada con el propio elemento de entrada-->
+            <label> <input type="radio" id="Outdoor" name="Indoor-Outdoor" value="outdoor">outdoor</label><!--el atribut name nos sirve en este caso para que no se seleccionen las dos opc. juntas-->
+          </fieldset> <!--etiqueta para encuadrar las opciones-->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="Loving" name="personality" value="Loving" checked> <label for="loving">Loving</label> <!--Es una forma de anidarlo con el formulario a traves de label y for--> 
+            <input type="checkbox" id="Lazy" name="personality" value="Lazy"> <label for="Lazy">Lazy</label>
+            <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic">energetic</label>
+            <!-- Es una buena practica agregar los value-->
+         
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="Cat phot URL" required> <!--Placeholder es el texto que sale antes que se lo llene / type= es el tipo de dato que se va a insertar/ name es el nombre-->
+        <!-- required obliga al usuario a llenar el formulario-->
+        <button type="submit">Submit</button>
+        
+        
+        </section>
+
     </main>
+    <footer> 
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer> <!--Se agrega un pie de pagina-->
     </body>
 </html>
