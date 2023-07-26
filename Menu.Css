@@ -1,0 +1,22 @@
+style
+h1,h2,p{
+    text-align:center;
+}
+body{
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+} /*De esta forma se le pone un fondo a la pagina, en este caso los granos de café*/
+.menu{
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+} /*De esta forma cambiamos el div por el .menu y despues lo anidamos como atributo en el div del html*/
+.flavor{
+    text-align: left;
+}
+.price{
+    text-align: right;
+}
+.item p {
+    display: inline-block;
+}
