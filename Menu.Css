@@ -1,22 +1,90 @@
 style
-h1,h2,p{
+.h1,h2,p{
     text-align:center;
 }
 body{
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
 } /*De esta forma se le pone un fondo a la pagina, en este caso los granos de café*/
+
+.Established{font-style: Italic;} /*Aquí creamos el selector para ponerle cursiva a la palabra Est.2023*/
+
+.h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.h2{
+    font-size: 30px;
+}
+
 .menu{
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+
 } /*De esta forma cambiamos el div por el .menu y despues lo anidamos como atributo en el div del html*/
-.flavor{
+.flavor,.dessert{
     text-align: left;
+    width: 75%;
 }
 .price{
     text-align: right;
+    width: 25%;
 }
 .item p {
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.h1,h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+hr{
+    height: 3px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+/*FOOTER*/
+
+footer{
+    font-size: 14px;
+}/*Cambia la letra del pié de página*/
+
+a{
+    color: black;
+} /*Cambia el color del enlace*/
+
+a:visited{
+    color: gray;
+} /*Cambiar el color cuando el enlace ya fue visitado*/
+
+a:hover{
+    color: brown;
+} /*Cambia de color cuando un usuario pasa el click sobre el enlace*/ 
+
+a:active{
+    color: brown;
+} /*Cambia de color cuando se le hace click al enlace*/
+
+.address{
+    margin-bottom: 5px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
